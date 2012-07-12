@@ -61,7 +61,7 @@
     <packaging>maven-plugin</packaging>
 
     <!-- Note that as this plugin depends on the ANTLR tool itself
-         we cannot use the paren pom to control the version number
+         we cannot use the parent pom to control the version number
          and MUST update <version> in this pom manually!
          -->
     <version>3.4.1-SNAPSHOT</version>
@@ -102,7 +102,7 @@ in to ANTLR's Tool.java code, where they belong, and they now provide a
 public interface to anyone that might want to interface with them.
 
 One other goal of this rewrite was to completely document the whole thing
-to death. Hence even this pom has more comments than funcitonal elements,
+to death. Hence even this pom has more comments than functional elements,
 in case I get run over by a bus or fall off a cliff while skiing.
 
 Jim Idle - March 2009
@@ -211,7 +211,7 @@ Jim Idle - March 2009
 
     </repositories>
     
-    <!-- Ancilliary information for completeness
+    <!-- Ancillary information for completeness
       -->
     <inceptionYear>2009</inceptionYear>
 
@@ -236,7 +236,7 @@ Jim Idle - March 2009
 
     <!--
 
-     What are we depedent on for the Mojos to execute? We need the
+     What are we dependent on for the Mojos to execute? We need the
      plugin API itself and of course we need the ANTLR Tool and runtime
      and any of their dependencies, which we inherit. The Tool itself provides
      us with all the dependencies, so we need only name it here.

@@ -12,7 +12,7 @@
     What version of ANTLR are we building? This sets the
     the version number for all other things that are built
     as part of an ANTLR release, unless they override or
-    ignore it. We do this via a properites file for this
+    ignore it. We do this via a properties file for this
     pom.
     -->
 
@@ -43,7 +43,7 @@
 
   <!--
 
-    Define where the ANTLR releated jars are deployed both for
+    Define where the ANTLR related jars are deployed both for
     the main ANTLR repository, which syncs with the maven main
     repository, and the snapshot repository, which can be
     used by developers that need the latest development version of
@@ -220,7 +220,7 @@
                     This does not preclude any of the module generated jars from
                     being used on their own of course.
 
-                    Here, we also build a master source jar as I was unable to pursuade
+                    Here, we also build a master source jar as I was unable to persuade
                     this plugin to use multiple configurations and not have the thing
                     screw up because of multiple modules :-(
 
